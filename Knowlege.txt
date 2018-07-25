@@ -1,0 +1,14 @@
+================================= **************************** ===========================================
+
+======= Thread =======
+test file: TestThread
+* Class extended java.lang.Thread
+* Thread.start() : run thread
+* Thread.run() : you can write solving code in this method
+* Thread.sleep(milisecond_time) : thread sleep in milisecond_time
+
+note 1: cannot call start() method (this method was call by main method) 2 time, use run() method 
+	to execute code and run was call by current thread, call start 2 time will throw 
+	IllegalStateException
+note 2: Game will run in run() method, with code is surround in do..while() expression, condition
+	of do-while is condition when game is end
