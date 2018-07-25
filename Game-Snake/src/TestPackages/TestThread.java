@@ -31,7 +31,6 @@ public class TestThread extends Thread {
         System.out.println("Caller: "+ this.caller + 
                 " and code on this Thread is exeuted by : " + 
                 Thread.currentThread().getName());   
- //       /*
         int i= 0;
         do{
             try {
@@ -42,7 +41,5 @@ public class TestThread extends Thread {
             }
             System.out.println("Thread sleep in 2s!, counting: " +i);
         }while(i <100);
-        
-//        */
     }
 }

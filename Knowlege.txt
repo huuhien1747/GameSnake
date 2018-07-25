@@ -2,6 +2,9 @@
 
 ======= Thread =======
 test file: TestThread
+** Create a Thread:
+	* extends Thread class
+	* implements Runable interface
 * Class extended java.lang.Thread
 * Thread.start() : run thread
 * Thread.run() : you can write solving code in this method
@@ -12,3 +15,7 @@ note 1: cannot call start() method (this method was call by main method) 2 time,
 	IllegalStateException
 note 2: Game will run in run() method, with code is surround in do..while() expression, condition
 	of do-while is condition when game is end
+note 3: In a class implements Runnable interface:
+	- Can create 1 instance of Thread class with constructor argument is this class
+	(test file: pkg TestGraphics.TestGraphics)
+	- Call start() method in that instance with run() method implements in this class
